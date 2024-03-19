@@ -1,5 +1,5 @@
-@use "breakpoint";
-@use "color";
-@use "content-width";
-@use "font";
-@use "mixin";
+@forward "breakpoint";
+@forward "color";
+@forward "content-width";
+@forward "font";
+@forward "mixin";

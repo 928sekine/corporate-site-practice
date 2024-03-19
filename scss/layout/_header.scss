@@ -4,3 +4,36 @@
 layout > header
 ------------------------------
 */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--color-bg-white);
+  height: 60px;
+  position: relative;
+  width: 100%;
+
+  @include g.mq() {
+    height: 90px;
+  }
+}
+
+.header__logo {
+  padding-left: 20px;
+  width: 107px;
+
+  @include g.mq() {
+  }
+  img {
+    display: block;
+  }
+}
+
+.header__inner--menu {
+  position: absolute;
+  background-color: var(--color-font-primary);
+  height: 60px;
+  width: 60px;
+  top: 0;
+  right: 0;
+}
