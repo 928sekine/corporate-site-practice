@@ -4,3 +4,11 @@
 component > title
 ------------------------------
 */
+.c-title--level2 {
+  font-size: 32px;
+  letter-spacing: 0;
+  font-family: var(--font-family-en);
+  @include g.lineHeightSpaceFill(1);
+  line-height: 1;
+  color: var(--color-font-primary);
+}

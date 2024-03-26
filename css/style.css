@@ -234,6 +234,26 @@ component > kv
 component > title
 ------------------------------
 */
+.c-title--level2 {
+  font-size: 32px;
+  letter-spacing: 0;
+  font-family: var(--font-family-en);
+  line-height: 1;
+  color: var(--color-font-primary);
+}
+.c-title--level2::before, .c-title--level2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+}
+.c-title--level2::before {
+  margin-top: calc((1 - 1) * 0.5em);
+}
+.c-title--level2::after {
+  margin-bottom: calc((1 - 1) * 0.5em);
+}
+
 /*!
 layout > container
 ------------------------------
@@ -335,10 +355,30 @@ layout > header
 page > top > top-kv
 ------------------------------
 */
+.top__kv {
+  height: 460px;
+  background-image: url("/img/sp_mv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.top__kv--copy {
+  width: 272px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*!
 page > top > top-news
 ------------------------------
 */
+.top__news {
+  padding: 35px 0 60px;
+}
+
 /*!
 page > top > top-service
 ------------------------------
