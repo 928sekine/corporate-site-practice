@@ -7,3 +7,12 @@ page > top > top-news
 .top__news {
   padding: 35px 0 60px;
 }
+
+.news__list {
+  margin-top: 16px;
+}
+.news__list--item {
+  padding-bottom: 16px;
+  border-bottom: solid 1px #ededed;
+  margin-bottom: 16px;
+}

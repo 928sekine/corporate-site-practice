@@ -26,8 +26,7 @@ global > font
 ------------------------------
 */
 :root {
-  --font-family-base: "Noto Sans JP", sans-serif;
-  --font-family-english: "Roboto", sans-serif;
+  --font-family-base: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 /*!
@@ -44,6 +43,24 @@ body {
   body {
     font-size: 16px;
   }
+}
+
+.c-base-text {
+  font-size: 15px;
+  line-height: 1.75;
+  font-family: var(--font-family-base);
+}
+.c-base-text::before, .c-base-text::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+}
+.c-base-text::before {
+  margin-top: calc((1 - 1.75) * 0.5em);
+}
+.c-base-text::after {
+  margin-bottom: calc((1 - 1.75) * 0.5em);
 }
 
 /*!
@@ -379,10 +396,33 @@ page > top > top-news
   padding: 35px 0 60px;
 }
 
+.news__list {
+  margin-top: 16px;
+}
+
+.news__list--item {
+  padding-bottom: 16px;
+  border-bottom: solid 1px #ededed;
+  margin-bottom: 16px;
+}
+
 /*!
 page > top > top-service
 ------------------------------
 */
+.service__list--item {
+  background-color: var(--color-bg-white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service__icon {
+  width: 60px;
+  height: 60px;
+}
+
 /*!
 page > message > message
 ------------------------------
