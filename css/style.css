@@ -420,6 +420,11 @@ page > top > top-kv
   background-size: cover;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .top__kv {
+    background-image: url("https://928sekine.github.io/corporate-site-practice/img/pc_mv.jpg");
+  }
+}
 
 .top__kv--copy {
   width: 272px;

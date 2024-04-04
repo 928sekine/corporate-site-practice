@@ -10,6 +10,9 @@ page > top > top-kv
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  @include g.mq() {
+    background-image: url("https://928sekine.github.io/corporate-site-practice/img/pc_mv.jpg");
+  }
 }
 .top__kv--copy {
   width: 272px;
