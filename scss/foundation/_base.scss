@@ -9,7 +9,6 @@ body {
   font-size: 14px;
   color: var(--color-font-base);
   font-family: var(--font-family-base);
-
   @include g.mq() {
     font-size: 16px;
   }
@@ -17,6 +16,21 @@ body {
 
 .c-base-text {
   font-size: 15px;
+  line-height: 1.75;
+  @include g.lineHeightSpaceFill(1.75);
+  font-family: var(--font-family-base);
+}
+.c-base-text__large {
+  font-size: 16px;
+  line-height: 1.75;
+  @include g.lineHeightSpaceFill(1.75);
+  font-family: var(--font-family-base);
+  @include g.mq() {
+    font-size: 18px;
+  }
+}
+.c-base-text__small {
+  font-size: 14px;
   line-height: 1.75;
   @include g.lineHeightSpaceFill(1.75);
   font-family: var(--font-family-base);

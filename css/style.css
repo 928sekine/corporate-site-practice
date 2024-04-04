@@ -63,6 +63,47 @@ body {
   margin-bottom: calc((1 - 1.75) * 0.5em);
 }
 
+.c-base-text__large {
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: var(--font-family-base);
+}
+.c-base-text__large::before, .c-base-text__large::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+}
+.c-base-text__large::before {
+  margin-top: calc((1 - 1.75) * 0.5em);
+}
+.c-base-text__large::after {
+  margin-bottom: calc((1 - 1.75) * 0.5em);
+}
+@media screen and (min-width: 768px) {
+  .c-base-text__large {
+    font-size: 18px;
+  }
+}
+
+.c-base-text__small {
+  font-size: 14px;
+  line-height: 1.75;
+  font-family: var(--font-family-base);
+}
+.c-base-text__small::before, .c-base-text__small::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+}
+.c-base-text__small::before {
+  margin-top: calc((1 - 1.75) * 0.5em);
+}
+.c-base-text__small::after {
+  margin-bottom: calc((1 - 1.75) * 0.5em);
+}
+
 /*!
 foundation > reset
 ------------------------------
@@ -410,17 +451,58 @@ page > top > top-news
 page > top > top-service
 ------------------------------
 */
+.service__list {
+  margin: 14px 0 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .service__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 43px 0 100px 0;
+  }
+}
+
 .service__list--item {
   background-color: var(--color-bg-white);
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  padding: 40px 30px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .service__list--item {
+    flex: 1;
+    padding: 50px;
+    margin-bottom: 0;
+  }
+}
+
+.service__list--item:last-child {
+  margin-bottom: 0;
 }
 
 .service__icon {
   width: 60px;
   height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .service__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.service__title {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .service__title {
+    margin-bottom: 10px;
+  }
 }
 
 /*!
