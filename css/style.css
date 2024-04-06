@@ -628,12 +628,12 @@ page > message > message
   padding: 30px 0 50px 0;
 }
 
-.message_title {
+.message__title {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.message_title--subtitle {
+.message__title--subtitle {
   text-align: center;
   margin-bottom: 30px;
 }
