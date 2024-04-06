@@ -5,15 +5,39 @@ page > message > message
 ------------------------------
 */
 
-.message__kv {
-  height: 460px;
-  // background-image: url("https://928sekine.github.io/corporate-site-practice/img/sp_mv.jpg");
-  background-image: url("/img/sp_mv.jpg");
+.message__header {
+  height: 160px;
+  // background-image: url("https://928sekine.github.io/corporate-site-practice/img/sp_header.jpg");
+  background-image: url("/img/sp_header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include g.mq() {
-    // background-image: url("https://928sekine.github.io/corporate-site-practice/img/pc_mv.jpg");
-    background-image: url("/img/pc_mv.jpg");
+    // background-image: url("https://928sekine.github.io/corporate-site-practice/img/pc_header.jpg");
+    background-image: url("/img/pc_header.jpg");
   }
+}
+
+.message__header--title {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: var(--font-family-en);
+  @include g.lineHeightSpaceFill(1);
+  line-height: 1;
+  color: var(--color-font-white);
+}
+.message__container {
+  padding: 30px 0 50px 0;
+}
+.message_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.message_title--subtitle {
+  text-align: center;
+  margin-bottom: 30px;
 }

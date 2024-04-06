@@ -294,7 +294,8 @@ component > title
 */
 .c-title--level2 {
   font-size: 32px;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
+  font-weight: 700;
   font-family: var(--font-family-en);
   line-height: 1;
   color: var(--color-font-primary);
@@ -309,6 +310,27 @@ component > title
   margin-top: calc((1 - 1) * 0.5em);
 }
 .c-title--level2::after {
+  margin-bottom: calc((1 - 1) * 0.5em);
+}
+
+.c-title--level3 {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: var(--font-family-en);
+  line-height: 1;
+  color: var(--color-font-primary);
+}
+.c-title--level3::before, .c-title--level3::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+}
+.c-title--level3::before {
+  margin-top: calc((1 - 1) * 0.5em);
+}
+.c-title--level3::after {
   margin-bottom: calc((1 - 1) * 0.5em);
 }
 
@@ -437,6 +459,7 @@ page > top > top-kv
   font-size: 80px;
   line-height: 1.75;
   font-weight: 700;
+  margin-bottom: 10px;
   color: var(--color-font-white);
   font-family: var(--font-family-base);
 }
@@ -461,7 +484,7 @@ page > top > top-kv
 .kv__title--subtitle {
   font-size: 20px;
   line-height: 1.75;
-  font-weight: 700;
+  letter-spacing: 0.1em;
   color: var(--color-font-white);
   font-family: var(--font-family-base);
 }
@@ -552,6 +575,7 @@ page > top > top-service
 
 .service__title {
   margin-bottom: 5px;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .service__title {
@@ -563,17 +587,55 @@ page > top > top-service
 page > message > message
 ------------------------------
 */
-.message__kv {
-  height: 460px;
-  background-image: url("/img/sp_mv.jpg");
+.message__header {
+  height: 160px;
+  background-image: url("/img/sp_header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .message__kv {
-    background-image: url("/img/pc_mv.jpg");
+  .message__header {
+    background-image: url("/img/pc_header.jpg");
   }
+}
+
+.message__header--title {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: var(--font-family-en);
+  line-height: 1;
+  color: var(--color-font-white);
+}
+.message__header--title::before, .message__header--title::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+}
+.message__header--title::before {
+  margin-top: calc((1 - 1) * 0.5em);
+}
+.message__header--title::after {
+  margin-bottom: calc((1 - 1) * 0.5em);
+}
+
+.message__container {
+  padding: 30px 0 50px 0;
+}
+
+.message_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.message_title--subtitle {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /*!

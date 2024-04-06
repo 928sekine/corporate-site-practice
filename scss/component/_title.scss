@@ -6,7 +6,17 @@ component > title
 */
 .c-title--level2 {
   font-size: 32px;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: var(--font-family-en);
+  @include g.lineHeightSpaceFill(1);
+  line-height: 1;
+  color: var(--color-font-primary);
+}
+.c-title--level3 {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
   font-family: var(--font-family-en);
   @include g.lineHeightSpaceFill(1);
   line-height: 1;

@@ -32,6 +32,7 @@ page > top > top-kv
   font-size: 80px;
   line-height: 1.75;
   font-weight: 700;
+  margin-bottom: 10px;
   color: var(--color-font-white);
   @include g.lineHeightSpaceFill(1.75);
   font-family: var(--font-family-base);
@@ -42,7 +43,8 @@ page > top > top-kv
 .kv__title--subtitle {
   font-size: 20px;
   line-height: 1.75;
-  font-weight: 700;
+  // font-weight: 700;
+  letter-spacing: 0.1em;
   color: var(--color-font-white);
   @include g.lineHeightSpaceFill(1.75);
   font-family: var(--font-family-base);
