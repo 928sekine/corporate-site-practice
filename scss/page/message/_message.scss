@@ -4,3 +4,16 @@
 page > message > message
 ------------------------------
 */
+
+.message__kv {
+  height: 460px;
+  // background-image: url("https://928sekine.github.io/corporate-site-practice/img/sp_mv.jpg");
+  background-image: url("/img/sp_mv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @include g.mq() {
+    // background-image: url("https://928sekine.github.io/corporate-site-practice/img/pc_mv.jpg");
+    background-image: url("/img/pc_mv.jpg");
+  }
+}
